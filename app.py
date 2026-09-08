@@ -56,7 +56,7 @@ if prompt := st.chat_input("💬 Ask your study question..."):
                     )
 
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-3.6-flash",
                     contents=system_instruction + "\n\n" + "\n".join(conversation)
                 )
 
